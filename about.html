@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/static/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+              <nav>
+                <img src="/static/image/logo.png" class="logo">
+                <ul>    
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact </a></li>
+                </ul>
+              </nav>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="/static/image/Potrait-aboutme.png" alt="About Me" class="about-img">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Trialdy, an Electrical Engineering student with a passion for game development. 
+                I love creating immersive experiences and exploring the intersection of technology and creativity.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                    <p class="tab-links"onclick="opentab('Experiences')"> Experiences</p>
+                    <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills"> 
+                    <ul>
+                        <li><span>Game Development</span><br>Built small-medium scope 2D/3D games using Unity Engine</li>
+                        <li><span>IoT Programming</span><br>Built IoT System using Arduino</li>
+                        <li><span>Photography</span><br>Captured professional-quality potrait and landscape photographs</li>
+                        <li><span>Videography</span><br>Produced engaging video content with high quality visual</li>
+                        <li><span>Graphic Design</span><br>Designed creative and clean styled posters and logo</li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experiences"> 
+                    <ul>
+                        <li><span>2025-currect</span><br>Youthly Record Yearbook Staff</li>
+                        <li><span>2025-current</span><br>Media Information Staff at HMTE UNPAD</li>
+                        <li><span>2025-current</span><br>KASTRAD staff at KMMK Unpad</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id ="Education"> 
+                    <ul>
+                        <li><span>2024-current</span><br>Electrical Engineering Student at Padjadjaran University</li>
+                        <li><span>2021-current</span><br>Madrasah Aliyah Alhuda Pameungpeuk</li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+</body>
+</html>
