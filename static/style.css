@@ -181,11 +181,11 @@ nav ul li a:hover::after {
 /*----------------------project---------------------------*/
 #carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 300px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(10, 10, 10, 0);
 }
 
 .carousel-images {
@@ -208,7 +208,7 @@ nav ul li a:hover::after {
 }
 
 .carousel-button {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #435880;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -217,5 +217,6 @@ nav ul li a:hover::after {
 }
 
 .carousel-button:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #2e4369;
 }
+
